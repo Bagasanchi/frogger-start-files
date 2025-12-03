@@ -1,6 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://bjy1c24lq0gf7"]
+[gd_scene load_steps=14 format=3 uid="uid://biue6lks82g72"]
 
-[ext_resource type="Script" uid="uid://bpf61kdirs6ek" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://b6jgk30lxfq83" path="res://scenes/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://c4q6c7mxqh78h" path="res://graphics/player/player_tileset.png" id="2_onrkg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
@@ -97,6 +97,8 @@ animations = [{
 size = Vector2(12, 8)
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 13
 script = ExtResource("1_onrkg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
